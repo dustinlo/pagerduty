@@ -3,7 +3,7 @@
 In the current use case, Metrics Platform and PagerDuty alert are mandatory. In this doc, three different ways of integrations will be discussed. The first two ways seems more viable. **These can and should be tested via a post request with raw body including JSON.** Testing through metrics platform is necessary but should be done after everything(message format) is set up. **PagerDuty abandons messages with undesired JSON style**.
 
 
-## Metrics Platform → Amazon SNS → PagerDuty ruleset → PagerDuty Alert (Current Setup)
+## 1. Metrics Platform → Amazon SNS → PagerDuty ruleset → PagerDuty Alert (Current Setup)
 
 ### Pros:
 - Set up already
@@ -43,7 +43,7 @@ In the current use case, Metrics Platform and PagerDuty alert are mandatory. In 
 }
 ```
 
-## Metrics Platform → Amazon SNS → PagerDuty ruleset → PagerDuty Alert (Different setup)
+## 2. Metrics Platform → Amazon SNS → PagerDuty ruleset → PagerDuty Alert (Different setup)
 
 ### Pros:
 - Semi-set up already
@@ -120,7 +120,7 @@ In the current use case, Metrics Platform and PagerDuty alert are mandatory. In 
 ```
 
 
-## Metrics Platform → PagerDuty Alert
+## 3. Metrics Platform → PagerDuty Alert
 
 ### Pros:
 - Easy to set up
